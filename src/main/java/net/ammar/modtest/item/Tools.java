@@ -12,10 +12,10 @@ public enum Tools implements ToolMaterial {
         return Ingredient.ofItems(Items.COPPER_INGOT);
     });
 
-    private int miningLevel;
-    private int itemDurability;
-    private float miningSpeed;
-    private float attackDamage;
+    private final int miningLevel;
+    private final int itemDurability;
+    private final float miningSpeed;
+    private final float attackDamage;
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
@@ -32,32 +32,16 @@ public enum Tools implements ToolMaterial {
         return itemDurability;
     }
 
-    public void setDurability(int itemDurability) {
-        this.itemDurability = itemDurability;
-    }
-
     public float getMiningSpeedMultiplier() {
         return miningSpeed;
-    }
-
-    public void setMiningSpeedMultiplier(float miningSpeed) {
-        this.miningSpeed = miningSpeed;
     }
 
     public float getAttackDamage() {
         return attackDamage;
     }
 
-    public void setAttackDamage(float attackDamage) {
-        this.attackDamage = attackDamage;
-    }
-
     public int getMiningLevel() {
         return miningLevel;
-    }
-
-    public void setMiningLevel(int miningLevel) {
-        this.miningLevel = miningLevel;
     }
 
     public int getEnchantability() {
