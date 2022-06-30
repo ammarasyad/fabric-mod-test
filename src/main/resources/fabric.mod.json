@@ -1,25 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ammar",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Copper Tools Mod",
+  "description": "Adds copper tools to Minecraft. For testing purposes.",
   "authors": [
     "Me!"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/ammarasyad/fabric-mod-test"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/ammar/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.ammar.modtest.MainMod"
     ]
   },
   "mixins": [
@@ -27,9 +26,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.14.8",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.19.x",
     "java": ">=17"
   },
   "suggests": {
